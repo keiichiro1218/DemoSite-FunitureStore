@@ -1,0 +1,49 @@
+@use "./global/variables" as var;
+@use "./global/mixin" as mixin;
+
+.l-header {
+    width: 100%;
+    height: 57px;
+
+}
+
+.l-header__inner {
+    position: relative;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+}
+
+.l-header__logo {
+    display: block;
+    height: 37px;
+    width: 100%;
+
+    a {
+        height: 100%;
+        display: inline-block;
+    }
+
+    img {
+        height: 100%;
+    }
+}
+
+.l-header__nav {
+    display: none;
+    
+}
+
+.l-header__navBtn {
+    height: 57px;
+    position: absolute;
+    left: 0;
+
+}
+
+.l-header__icon {
+    display: flex;
+}
+

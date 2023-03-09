@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {
+    "gulp-dart-sass": "^1.0.2",
+    "gulp-sass-glob-use-forward": "^0.1.3"
+  }
+}
