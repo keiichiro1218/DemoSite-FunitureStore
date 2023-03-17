@@ -1,0 +1,9 @@
+@use "./global/variables" as var;
+@use "./global/mixin" as mixin;
+
+.fa-play {
+    transform:rotate(90deg); 
+    font-size: 12px;
+    color: var.$brown;
+}
+
