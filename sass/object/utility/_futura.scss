@@ -1,0 +1,8 @@
+@use "./global/variables" as var;
+@use "./global/mixin" as mixin;
+
+.u-futura {
+  font-family: "futura-pt", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}

@@ -1,0 +1,11 @@
+@use "./global/variables" as var;
+@use "./global/mixin" as mixin;
+
+.c-campaignLavel {
+  display: inline-block;
+  color: var.$white;
+  font-size: 14px;
+  background-color: var.$black;
+  border-radius: 16px;
+  padding: 8px 12px;
+}

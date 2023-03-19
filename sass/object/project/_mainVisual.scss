@@ -1,0 +1,53 @@
+@use "./global/variables" as var;
+@use "./global/mixin" as mixin;
+
+.p-mainVisual {
+  position: relative;
+  height: 481px;
+  width: 100%;
+  background-image: url("../assets/img_mainvisual.jpg");
+  background-position: center;
+  background-size: 100% auto;
+
+}
+
+.p-mainVisual__inner {
+  margin: 0 3%;
+}
+
+.p-mainVisual__content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-80%);
+  
+}
+
+.p-mainVisual__sentence {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 40px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background-color: var.$white;
+  color: var.$black;
+
+  &:nth-of-type(1) {
+    margin-bottom: 8px;
+  }
+
+  &:nth-of-type(2) {
+    margin-bottom: 16px;
+  }
+}
+
+.p-mainVisual__sentenceSub {
+  background-color: var.$white;
+  display: inline-block;
+  line-height: 32px;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-weight: 500;
+  color: var.$black;
+
+}

@@ -369,6 +369,36 @@ video {
   position: absolute;
 }
 
+.c-buttonRegister {
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  padding: 15px 50px 15px 30;
+  border-radius: 16px;
+  background: linear-gradient(to right, #669988, #668899);
+}
+.c-buttonRegister::after {
+  margin-left: 6px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-60%);
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  content: "\f061";
+}
+
+.c-campaignLavel {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 14px;
+  background-color: #565956;
+  border-radius: 16px;
+  padding: 8px 12px;
+}
+
 .fa-play {
   transform: rotate(90deg);
   font-size: 12px;
@@ -422,6 +452,146 @@ video {
   top: 36px;
 }
 
+.c-step {
+  position: relative;
+  background-color: #F2F4F1;
+  padding: 8px 32px;
+}
+.c-step::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+  left: 0;
+  width: 0px;
+  height: 0px;
+  margin: auto;
+  border-style: solid;
+  border-color: #F2F4F1 transparent transparent transparent;
+  border-width: 10px 5px;
+}
+
+.c-step__text {
+  position: relative;
+}
+.c-step__text:before {
+  position: absolute;
+  left: -10px;
+  top: 5px;
+  content: "";
+  width: 1px;
+  height: 17px;
+  background: #000;
+  border-radius: 3px;
+  transform: rotate(-25deg);
+}
+.c-step__text:after {
+  position: absolute;
+  right: -10px;
+  top: 5px;
+  content: "";
+  width: 1px;
+  height: 17px;
+  background: #000;
+  border-radius: 3px;
+  transform: rotate(25deg);
+}
+
+.p-campaign {
+  position: relative;
+  background-color: #F2F4F1;
+  padding: 32px 0;
+}
+
+.p-campaign__catchphraseLeft {
+  position: absolute;
+  left: 43px;
+  bottom: 10%;
+  width: 100%;
+  transform: rotate(270deg);
+  transform-origin: bottom left;
+  font-family: "futura-pt", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  font-style: normal;
+  color: #565956;
+  opacity: 0.08;
+}
+
+.p-campaign__catchphraseRight {
+  position: absolute;
+  right: 43px;
+  bottom: 10%;
+  width: 100%;
+  transform: rotate(90deg);
+  transform-origin: bottom right;
+  font-family: "futura-pt", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  font-style: normal;
+  color: #565956;
+  opacity: 0.08;
+}
+
+.p-campaign__content {
+  position: relative;
+  width: 76%;
+  padding: 32px 0;
+  margin: 0 auto;
+  background-color: #ffffff;
+  text-align: center;
+}
+.p-campaign__content::before {
+  content: "今だけ！";
+  position: absolute;
+  top: 10;
+  left: -15;
+  color: #ffffff;
+  font-weight: 700;
+  background-color: #565956;
+  padding: 0 10px;
+  transform: rotate(-25deg);
+}
+
+.p-campaign__text {
+  margin-bottom: 21px;
+}
+
+.p-campaign__title {
+  font-size: 20px;
+  font-weight: 700;
+}
+.p-campaign__title span {
+  font-size: 24px;
+}
+
+.p-campaign__under {
+  margin: 0 13%;
+}
+
+.p-campaign__detail {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.p-campaign__rental {
+  order: 1;
+  margin-top: 12px;
+}
+
+.p-campaign__discount {
+  margin-left: 14px;
+}
+
+.p-campaign__3step {
+  margin-top: 32px;
+}
+
+.p-campaign__button {
+  margin-top: 23px;
+}
+
 .p-headerUnder {
   height: 28px;
   background-color: #F2F4F1;
@@ -430,4 +600,56 @@ video {
 .p-headerUnder__list {
   display: flex;
   justify-content: center;
+}
+
+.p-mainVisual {
+  position: relative;
+  height: 481px;
+  width: 100%;
+  background-image: url("../assets/img_mainvisual.jpg");
+  background-position: center;
+  background-size: 100% auto;
+}
+
+.p-mainVisual__inner {
+  margin: 0 3%;
+}
+
+.p-mainVisual__content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-80%);
+}
+
+.p-mainVisual__sentence {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 40px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background-color: #ffffff;
+  color: #565956;
+}
+.p-mainVisual__sentence:nth-of-type(1) {
+  margin-bottom: 8px;
+}
+.p-mainVisual__sentence:nth-of-type(2) {
+  margin-bottom: 16px;
+}
+
+.p-mainVisual__sentenceSub {
+  background-color: #ffffff;
+  display: inline-block;
+  line-height: 32px;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-weight: 500;
+  color: #565956;
+}
+
+.u-futura {
+  font-family: "futura-pt", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }

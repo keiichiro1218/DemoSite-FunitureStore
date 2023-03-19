@@ -7,6 +7,7 @@ head
   script(src="//code.jquery.com/jquery-1.12.1.min.js")
   script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
   script(src="./js/script.js")
+  link(rel="stylesheet" href="https://use.typekit.net/jpm5lrr.css")
   link(rel="stylesheet" href="../css/style.css?ver")
   title Document
 body
@@ -14,7 +15,7 @@ body
     div.l-header__inner
       h1.l-header__logo
         a(href="")
-          img(src="./assets/logo.svg" alt="")
+          img(src="../assets/logo.svg" alt="")
       div.l-header__nav.p-headerNav
         ul.l-header__list.p-headerNav__list
           li.p-headerNav__item
@@ -38,6 +39,35 @@ body
       li.c-navList
         a(href="").c-navList__link 家電
         i.fa-solid.fa-play
-  section.p-main
+  section.p-mainVisual
+    .p-mainVisual__inner
+      .p-mainVisual__content
+        .div
+          p.p-mainVisual__sentence いつでもどこでも。
+        .div
+          p.p-mainVisual__sentence わたしの好きが集まる暮らし。
+        .div
+          p.p-mainVisual__sentenceSub おうち空間を自由かつ手軽に模様替え
+  section.p-campaign
+    .p-campaign__catchphraseLeft LIMITED TIME CAMPAIGN
+    .p-campaign__content
+      .p-campaign__text
+        .p-campaign__title 高品質でセンスのいい<br>家具・家電を
+        .p-campaign__title #[span.u-futura 10%]0FF価格で<br>レンタルできます。
+      .p-campaign__under
+        .p-campaign__detail
+          .p-campaign__monthly.c-campaignLavel 月額<br>440円〜
+          .p-campaign__rental.c-campaignLavel 1ヶ月〜レンタル可能
+          .p-campaign__discount.c-campaignLavel 長期レンタル<br>割引あり
+        .p-campaign__3step.c-step
+          p.c-step__text カンタン！ 3 STEP
+        .p-campaign__button
+          a.c-buttonRegister 今すぐ会員登録
+    .p-campaign__catchphraseRight LIMITED TIME CAMPAIGN
+  section.p-realization
+    .p-realization__title
+      .c-section__title Rich-Lifeがお約束する、5つの暮らし
+    
+
 
 

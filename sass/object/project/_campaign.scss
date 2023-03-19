@@ -1,0 +1,115 @@
+@use "./global/variables" as var;
+@use "./global/mixin" as mixin;
+
+.p-campaign {
+  position: relative;
+  background-color: var.$gray;
+  padding: 32px 0;
+
+}
+
+.p-campaign__catchphraseLeft {
+  position: absolute;
+  left: 43px;
+  bottom: 10%;
+  width: 100%;
+  transform: rotate(270deg);
+  transform-origin: bottom left;
+  font-family: "futura-pt", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  font-style: normal;
+  color: var.$black;
+  opacity: 0.08;
+  
+}
+
+.p-campaign__catchphraseRight {
+  position: absolute;
+  right: 43px;
+  bottom: 10%;
+  width: 100%;
+  transform: rotate(90deg);
+  transform-origin: bottom right;
+  font-family: "futura-pt", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  font-style: normal;
+  color: var.$black;
+  opacity: 0.08;
+  
+}
+
+.p-campaign__content {
+  position: relative;
+  width: 76%;
+  padding: 32px 0;
+  margin: 0 auto;
+  background-color: var.$white;
+  text-align: center;
+
+  &::before {
+    content: "今だけ！";
+    position: absolute;
+    top: 10;
+    left: -15;
+    color: var.$white;
+    font-weight: 700;
+    background-color: var.$black;
+    padding: 0 10px;
+    transform:rotate(-25deg)
+  }
+
+}
+
+.p-campaign__text {
+  margin-bottom: 21px;
+  
+}
+
+.p-campaign__title {
+  font-size: 20px;
+  font-weight: 700;
+
+  span {
+    font-size: 24px;
+
+  }
+}
+
+.p-campaign__under {
+  margin: 0 13%;
+
+}
+
+.p-campaign__detail {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.p-campaign__monthly {
+
+}
+
+.p-campaign__rental {
+  order: 1;
+  margin-top: 12px;
+
+}
+
+.p-campaign__discount {
+  margin-left: 14px;
+
+}
+
+.p-campaign__3step {
+  margin-top: 32px;
+
+}
+
+.p-campaign__button {
+  margin-top: 23px;
+
+}
