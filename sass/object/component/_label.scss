@@ -1,0 +1,11 @@
+@use "./global/variables" as var;
+@use "./global/mixin" as mixin;
+
+.c-label {
+  background-color: var.$brown;
+  color: var.$white;
+  padding: 0 15px;
+  font-weight: 450;
+  font-size: 18px;
+  
+}

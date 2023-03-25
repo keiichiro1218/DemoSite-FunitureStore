@@ -1,0 +1,45 @@
+@use "./global/variables" as var;
+@use "./global/mixin" as mixin;
+
+.p-solution {
+  background-image: url(../assets/img_solution-background.png);
+  
+}
+
+.p-solution__inner {
+  margin: 0 3%;
+  padding: 32px 0 86px 0;
+}
+
+.p-solution__title {
+  text-align: center;
+}
+
+.p-solution__problems {
+ margin-top: 28px;
+
+}
+
+.p-solution__problem {
+  
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.p-solution__label {
+  position: absolute;
+  background-color: var.$green1;
+  padding: 20px 10px;
+  left: 50%;
+  transform: translateX(-50%)translateY(-50%);
+  text-align: center;
+  width: 87%;
+}
+
+.p-solution__label-text {
+  color: var.$white;
+  font-weight: 700;
+  font-size: 16px;
+
+}

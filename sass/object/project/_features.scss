@@ -1,0 +1,68 @@
+@use "./global/variables" as var;
+@use "./global/mixin" as mixin;
+
+.p-features {
+  margin-top: 32px;
+  padding: 32px 0;
+  background-image: url("../assets/img_background-features.png");
+  background-position: center;
+  background-size: cover;
+  background-position: 61% 75%;
+
+}
+
+.p-features__inner {
+  margin: 0 3%;
+
+}
+
+.p-features__title {
+  text-align: center;
+  padding-top: 32px;
+
+}
+
+.p-features__cards {
+  margin-top: 30px;
+
+}
+
+.p-features__card {
+  background-color: var.$white;
+  padding: 30px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  border-radius: 32px;
+  margin-bottom: 24px;
+
+
+  @include mixin.mq('tab') {
+		display: flex;
+	}
+
+}
+
+.p-features__heading {
+  
+
+}
+
+.p-features__heading-point {
+  display: inline-block;
+
+}
+
+.p-features__heading-text {
+  margin-top: 6px;
+}
+
+.p-features__text-wrapper {
+  width: 100%;
+
+}
+
+.p-features__img-wrapper {
+  width: 60%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}

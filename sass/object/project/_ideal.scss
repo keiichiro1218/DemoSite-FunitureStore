@@ -1,0 +1,77 @@
+@use "./global/variables" as var;
+@use "./global/mixin" as mixin;
+
+.p-ideal {
+  padding: 92px 0 32px 0;
+
+}
+
+.p-ideal__inner {
+  margin: 0 3%;
+
+}
+
+.p-ideal__title {
+ text-align: center;
+
+}
+
+.p-ideal__img {
+  width: 100%;
+
+}
+
+.p-ideal__img-wrapper {
+  width: 93%;
+  margin: 0 auto;
+  
+}
+
+.p-ideal__scene {
+  width: 100%;
+  position: relative;
+  margin-top: 40px;
+
+}
+
+.p-ideal__scene01 {
+
+  &::before {
+    content: "SCENE 01";
+  }
+
+}
+
+.p-ideal__scene02 {
+
+  &::before {
+    content: "SCENE 02";
+  }
+
+}
+
+.p-ideal__tag {
+  
+  &::before {
+    top:-15px;
+    position: absolute;
+    font-family: var.$futura;
+    font-style: normal;
+    font-weight: 700;
+    color: var.$black;
+    font-size: 24px;
+    
+  }
+}
+
+.p-ideal__contents {
+  padding: 24px 0;
+  background-color: var.$white;
+  box-shadow: 0px 4px 4px 0px #00000029;
+
+}
+
+.p-ideal__contents-inner {
+  margin: 0 8%;
+
+}

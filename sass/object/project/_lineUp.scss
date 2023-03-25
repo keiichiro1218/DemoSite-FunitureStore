@@ -1,0 +1,76 @@
+@use "./global/variables" as var;
+@use "./global/mixin" as mixin;
+
+.p-lineUp {
+  margin-top: 24px;
+}
+
+.p-lineUp__title {
+  text-align: center;
+}
+
+.p-lineUp__text {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+
+  &:before {
+    content: "";
+    height: 1px;
+    flex-grow: 1;
+    background-color: #666;
+    margin-right: 22px;
+
+  }
+
+  &:after {
+    content: "";
+    height: 1px;
+    flex-grow: 1;
+    background-color: #666;
+    margin-left: 22px;
+
+  }
+}
+
+.p-lineUp__text-sub {
+  display: inline-block;
+}
+
+.p-lineUp__cards {
+  margin-top: 16px;
+  display: flex;
+  
+}
+
+.p-lineUp__card {
+  width: 30%;
+
+  &:nth-child( n + 2 ) {
+    margin-left: 6%;
+  }
+  
+}
+
+.p-lineUp__item-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 104px;
+  padding: 8px;
+  background-color: var.$gray;
+  box-shadow: 0px 4px 4px 0px #00000029;
+  border-radius: 8px;
+
+}
+
+.p-lineUp__item {
+  font-size: 14px;
+  font-weight: 700;
+
+}
+
+.p-lineUp__color {
+  vertical-align: bottom;
+  margin-top: auto;
+}

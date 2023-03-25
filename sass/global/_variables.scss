@@ -4,4 +4,13 @@ $gray: #F2F4F1;
 $brown: #998866;
 $green1: #669988;
 $green2: #668899;
+$futura: "futura-pt", sans-serif;
 
+$breakpoints: (
+	"sp": "screen and (max-width: 390px)",
+  "tab": "screen and (min-width: 960px)",
+  "tab-middle": "screen and (min-width: 601px)",
+  "tab-mini": "screen and (min-width: 601px) and (max-width: 1150px)",
+  "pc": "screen and (min-width: 1151px)"
+
+);

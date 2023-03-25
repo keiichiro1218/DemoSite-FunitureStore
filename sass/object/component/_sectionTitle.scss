@@ -1,0 +1,26 @@
+@use "./global/variables" as var;
+@use "./global/mixin" as mixin;
+
+.c-sectionTitle {
+  position: relative;
+  font-size: 20px;
+  font-weight: 500;
+  color: var.$black;
+
+  &::after {
+    content: "";
+    width: 80px;
+    height: 1px;
+    display: inline-block;
+    background-color: var.$black;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+
+  }
+}
+
+.c-sectionSub {
+  margin-top: 16px;
+}

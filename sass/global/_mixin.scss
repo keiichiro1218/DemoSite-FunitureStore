@@ -1,1 +1,9 @@
 @use "./global/variables" as var;
+
+@mixin mq($breakpoint) {
+
+	@media #{map-get(var.$breakpoints, $breakpoint)} {
+
+		@content;
+	}
+}

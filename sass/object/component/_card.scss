@@ -1,0 +1,133 @@
+@use "./global/variables" as var;
+@use "./global/mixin" as mixin;
+
+.c-card {
+
+}
+
+.c-card__img-wrapper {
+  position: relative;
+
+  &::before {
+    position: absolute;
+   
+    top: 0;
+    left: 0;
+    color: var.$white;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: var.$green1;
+    padding: 8px 24px;
+
+  }
+}
+
+.c-card__lavel-01 {
+
+  &::before {
+    content:"REVIEW 01";
+  }
+}
+
+.c-card__lavel-02 {
+  
+  &::before {
+    content:"REVIEW 02";
+  }
+}
+.c-card__lavel-03 {
+  
+  &::before {
+    content:"REVIEW 03";
+  }
+}
+
+.c-card__content {
+  padding: 16px 0;
+  
+}
+
+.c-card__inner {
+  margin: 0 9%;
+}
+
+.c-card__img {
+  width: 100%;
+
+}
+
+.c-card__title {
+  display: inline-block;
+
+}
+
+.c-card__title-top {
+  margin-bottom: 8px;
+}
+
+.c-card__title-top03 {
+  margin-bottom: 8px;
+  text-align: end;
+}
+
+.c-card__title-under {
+  text-align: end;
+  margin-bottom: 17px;
+ 
+}
+
+.c-card__title-text {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 5px 15px;
+ 
+}
+
+.c-card__sentence {
+  font-size: 14px;
+
+}
+
+.c-card__name-wapper {
+  text-align: end;
+  margin-top: 20px;
+
+}
+
+.c-card__name {
+  font-size: 14px;
+}
+
+.c-card__heading-wrapper {
+  margin-top: 24px;
+
+}
+
+.c-card__heading {
+  display: flex;
+  align-items: center;
+
+  &:after {
+    content: "";
+    height: 1px;
+    flex-grow: 1;
+    background-color: #666;
+    margin-left: 10px;
+
+  }
+}
+
+.c-card__text-scene {
+  margin-top: 8px;
+  
+}
+
+.c-card__sentence-scene {
+  letter-spacing: 0.08em;
+
+}
+
+.c-card__img-wrapper-scene {
+  margin-top: 16px;
+}

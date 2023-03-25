@@ -1,0 +1,55 @@
+@use "./global/variables" as var;
+@use "./global/mixin" as mixin;
+
+.p-voice {
+  position: relative;
+  padding: 38px 0 32px 0;
+  background-image: url(../assets/voice_background.png);
+  background-size: 100%;
+
+}
+
+.p-voice__inner {
+  margin: 0 3%;
+}
+
+.p-voice__user {
+  position: relative;
+  text-align: center;
+  font-size: 32px;
+
+  &::before {
+    content: "おかげさまで\ARich-Life USER 総会員数";
+    display: block;
+    font-size: 16px;
+    white-space: pre;
+  }
+}
+
+.p-voice__user__img-left {
+  position: absolute;
+  top: 0;
+  left: 8px;
+}
+
+.p-voice__user__img-right {
+  position: absolute;
+  top: 0;
+  right: 8px;
+}
+
+.p-voice__emphasis {
+  font-size: 48px;
+  font-weight: 450px;
+
+}
+
+.p-voice__title {
+  text-align: center;
+  margin-top: 20px;
+
+}
+
+.p-voice__cards {
+  padding: 32px 0;
+}

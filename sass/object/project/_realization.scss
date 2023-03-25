@@ -2,5 +2,82 @@
 @use "./global/mixin" as mixin;
 
 .p-realization {
+  padding: 32px 0;
   
+}
+
+.p-realization__inner {
+  margin: 0 3%;
+  
+}
+
+.p-realization__title {
+  text-align: center;
+
+}
+
+.p-realization__cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 28px;
+
+}
+
+.p-realization__card {
+ text-align: center;
+
+ &:nth-child(n + 3) {
+  margin-top: 24px;
+
+}
+
+}
+
+.p-realization__card01 {
+  width: 30%;
+
+}
+
+.p-realization__card02 {
+  width: 40%;
+  margin-left: 3%;
+
+  img {
+    width: 75%;
+  }
+
+}
+
+.p-realization__card03 {
+  width: 30%;
+
+}
+
+.p-realization__card04 {
+  width: 30%;
+  margin-left: 2%;
+
+}
+
+.p-realization__card05 {
+  width: 30%;
+  margin-left: 2%;
+
+}
+
+.p-realization__label {
+  // text-align: center;
+
+}
+
+.p-realization__img {
+  width: 100%;
+
+}
+
+.p-realization__text {
+  text-align: start;
+  font-size: 14px;
+
 }
