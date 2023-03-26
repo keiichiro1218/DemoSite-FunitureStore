@@ -1,0 +1,50 @@
+@use "./global/variables" as var;
+@use "./global/mixin" as mixin;
+
+.c-media {
+  display: flex;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+    
+  }
+}
+
+.c-media__img-wrapper {
+  width: 46%;
+
+}
+
+.c-media__img {
+  width: 100%;
+
+}
+
+.c-media__text {
+  width: 54%;
+  padding-left: 15px;
+
+}
+
+.c-media__title {
+
+}
+
+.c-media__number {
+  color: var.$green1;
+  font-size: 24px;
+  margin-bottom: 11px;
+
+}
+
+.c-media__heading {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 13px;
+
+}
+
+.c-media__sentence {
+  font-size: 14px;
+
+}

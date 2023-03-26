@@ -1,0 +1,22 @@
+@use "./global/variables" as var;
+@use "./global/mixin" as mixin;
+
+.p-howToUse {
+  padding: 32px 0;
+
+}
+
+.p-howToUse__inner {
+  margin: 0 3%;
+
+}
+
+.p-howToUse__title {
+  text-align: center;
+
+}
+
+.p-howToUse__contents {
+  margin-top: 28px;
+
+}
