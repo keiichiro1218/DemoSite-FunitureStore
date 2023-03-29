@@ -19,4 +19,10 @@
 .p-howToUse__contents {
   margin-top: 28px;
 
+  @include mixin.mq('tab') {
+    display: flex;
+    justify-content: center;
+ 
+  }
+
 }

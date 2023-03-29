@@ -1,0 +1,76 @@
+@use "./global/variables" as var;
+@use "./global/mixin" as mixin;
+
+.p-footerList {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.p-footerList__content {
+
+  &:nth-child(n + 3) {
+    margin-top: 32px;
+  }
+}
+
+.p-footerList__list--right {
+  width: 41%;
+  margin-left: auto;
+
+}
+
+.p-footerList__list--left {
+  width: 52%;
+
+}
+
+.p-footerList__list-title {
+  font-weight: 450;
+  font-size: 18px;
+  color: var.$white;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 72px;
+    margin-top: 8px;
+    height: 1px;
+    background-color: var.$white;
+  }
+
+}
+
+.p-footerList__lists {
+  color: var.$white;
+  margin-top: 30px;
+  list-style: none;
+
+}
+
+.p-footerList__list {
+ 
+
+}
+
+.p-footerList__list-item {
+ font-size: 14px;
+
+}
+
+.p-footerList__note {
+  margin-top: 16px;
+
+}
+
+.p-footerList__copy-right {
+  margin-top: 36px;
+
+}
+
+.p-footerList__text {
+  font-size: 11px;
+  font-weight: 500;
+  color: var.$white;
+
+}

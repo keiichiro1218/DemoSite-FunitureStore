@@ -3,11 +3,21 @@
 
 .p-realization {
   padding: 32px 0;
+
+  @include mixin.mq('tab') {
+    padding: 80px 0;
+ 
+  }
   
 }
 
 .p-realization__inner {
   margin: 0 3%;
+
+  @include mixin.mq('tab') {
+    margin: 0 12%;
+
+  }
   
 }
 
@@ -22,17 +32,30 @@
   flex-wrap: wrap;
   margin-top: 28px;
 
-}
-
-.p-realization__card {
- text-align: center;
-
- &:nth-child(n + 3) {
-  margin-top: 24px;
+  @include mixin.mq('tab') {
+    flex-wrap: nowrap;
+ 
+  }
 
 }
 
-}
+// .p-realization__card {
+//  text-align: center;
+
+//   &:nth-child(n + 3) {
+//     margin-top: 24px;
+
+//   }
+
+//   @include mixin.mq('tab') {
+
+//     &:nth-child(n + 3) {
+//       margin-top: 0;
+    
+//     }
+
+//   }
+// }
 
 .p-realization__card01 {
   width: 30%;
@@ -43,8 +66,18 @@
   width: 40%;
   margin-left: 3%;
 
+  @include mixin.mq('tab') {
+    width: 30%;
+ 
+  }
+
   img {
     width: 75%;
+
+    @include mixin.mq('tab') {
+      width: 100%;
+   
+    }
   }
 
 }
@@ -81,3 +114,25 @@
   font-size: 14px;
 
 }
+
+.p-realization__card {
+  text-align: center;
+ 
+   &:nth-child(n + 3) {
+     margin-top: 24px;
+ 
+   }
+ 
+   @include mixin.mq('tab') {
+ 
+     &:nth-child(n + 3) {
+       margin-top: 0;
+     
+     }
+
+     &:nth-child(n + 2) {
+      margin-left: 5%;
+  
+    }
+   }
+ }

@@ -3,19 +3,32 @@
 
 .p-voice {
   position: relative;
-  padding: 38px 0 32px 0;
-  background-image: url(../assets/voice_background.png);
-  background-size: 100%;
+  padding: 0 0 32px 0;
+  
+
+}
+
+.p-voice__user-background {
+  padding-top: 32px;
+  background-image: url(../assets/img_background-voice2.png);
+  background-size: 100% 100%;
+  background-position: center;
 
 }
 
 .p-voice__inner {
   margin: 0 3%;
+
+}
+
+.p-voice__user-title {
+  text-align: center;
+
 }
 
 .p-voice__user {
+  display: inline-block;
   position: relative;
-  text-align: center;
   font-size: 32px;
 
   &::before {
@@ -29,13 +42,15 @@
 .p-voice__user__img-left {
   position: absolute;
   top: 0;
-  left: 8px;
+  left: -47%;
 }
 
 .p-voice__user__img-right {
   position: absolute;
   top: 0;
-  right: 8px;
+  right: -47%;
+  transform: scale(-1, 1);
+
 }
 
 .p-voice__emphasis {
@@ -52,4 +67,11 @@
 
 .p-voice__cards {
   padding: 32px 0;
+
+  @include mixin.mq('tab') {
+    display: flex;
+
+  }
+
 }
+

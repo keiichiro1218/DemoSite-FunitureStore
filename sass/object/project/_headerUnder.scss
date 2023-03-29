@@ -5,6 +5,10 @@
     height: 28px;
     background-color: var.$gray;
 
+    @include mixin.mq('tab') {
+		display: none;
+	}
+
 }
 
 .p-headerUnder__list {

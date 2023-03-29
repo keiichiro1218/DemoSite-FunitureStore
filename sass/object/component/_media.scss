@@ -8,10 +8,27 @@
     margin-bottom: 16px;
     
   }
+
+  @include mixin.mq('tab') {
+    display: block;
+
+
+    &:nth-child( n + 2 ) {
+      margin-left: 4%;
+    }
+ 
+  }
+
 }
 
 .c-media__img-wrapper {
   width: 46%;
+
+  @include mixin.mq('tab') {
+    width: 160px;
+    height: 160px;
+
+  }
 
 }
 
@@ -24,10 +41,24 @@
   width: 54%;
   padding-left: 15px;
 
+  @include mixin.mq('tab') {
+    width: 160px;
+    height: 160px;
+    padding-left: 0;
+ 
+  }
+
 }
 
 .c-media__title {
 
+  @include mixin.mq('tab') {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: 6px;
+ 
+  }
 }
 
 .c-media__number {
@@ -35,12 +66,23 @@
   font-size: 24px;
   margin-bottom: 11px;
 
+  @include mixin.mq('tab') {
+    margin-bottom: 0;
+ 
+  }
 }
 
 .c-media__heading {
   font-weight: 700;
   font-size: 18px;
   margin-bottom: 13px;
+
+  @include mixin.mq('tab') {
+    margin-bottom: 0;
+    text-align: center;
+    width: 100%;
+ 
+  }
 
 }
 

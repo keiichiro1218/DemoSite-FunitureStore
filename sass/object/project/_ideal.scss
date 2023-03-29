@@ -9,10 +9,45 @@
 .p-ideal__inner {
   margin: 0 3%;
 
+  @include mixin.mq('tab') {
+    margin: 0 9%;
+ 
+  }
+}
+
+.p-ideal__inner-card {
+  margin: 0 3%;
+
+  @include mixin.mq('tab') {
+    margin: 0 17%;
+ 
+  }
+}
+
+.p-ideal__card {
+  position: relative;
+  
+}
+
+.p-ideal__caption-sp {
+
+  @include mixin.mq('tab') {
+    display: none;
+ 
+  }
+}
+
+.p-ideal__caption-pc {
+  display: none;
+
+  @include mixin.mq('tab') {
+    display: block;
+ 
+  }
 }
 
 .p-ideal__title {
- text-align: center;
+  text-align: center;
 
 }
 
@@ -31,6 +66,7 @@
   width: 100%;
   position: relative;
   margin-top: 40px;
+  margin-bottom: 60px;
 
 }
 
@@ -60,6 +96,12 @@
     font-weight: 700;
     color: var.$black;
     font-size: 24px;
+
+    @include mixin.mq('tab') {
+      font-size: 48px;
+      top: -30px;
+   
+    }
     
   }
 }

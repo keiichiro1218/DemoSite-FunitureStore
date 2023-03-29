@@ -10,9 +10,9 @@
 
 .p-campaign__catchphraseLeft {
   position: absolute;
-  left: 43px;
+  left: 10%;
   bottom: 10%;
-  width: 100%;
+  width: 385px;
   transform: rotate(270deg);
   transform-origin: bottom left;
   font-family: "futura-pt", sans-serif;
@@ -21,14 +21,31 @@
   font-style: normal;
   color: var.$black;
   opacity: 0.08;
+
+  @include mixin.mq('tab') {
+    left: 20%;
+    bottom: 18%;
+    font-size: 48px;
+    text-align: center;
+
+  }
+
+  br {
+    display: none;
+
+    @include mixin.mq('tab') {
+      display: block;
+      text-align: center;
+    }
+  }
   
 }
 
 .p-campaign__catchphraseRight {
   position: absolute;
-  right: 43px;
+  right: 10%;
   bottom: 10%;
-  width: 100%;
+  width: 385px;
   transform: rotate(90deg);
   transform-origin: bottom right;
   font-family: "futura-pt", sans-serif;
@@ -37,6 +54,23 @@
   font-style: normal;
   color: var.$black;
   opacity: 0.08;
+
+    @include mixin.mq('tab') {
+      right: 20%;
+      bottom: 18%;
+      font-size: 48px;
+      text-align: center;
+
+    }
+
+  br {
+    display: none;
+
+    @include mixin.mq('tab') {
+      display: block;
+      text-align: center;
+    }
+  }
   
 }
 
@@ -48,6 +82,12 @@
   background-color: var.$white;
   text-align: center;
 
+  @include mixin.mq('tab') {
+		width: 50%;
+
+
+	}
+
   &::before {
     content: "今だけ！";
     position: absolute;
@@ -58,8 +98,14 @@
     background-color: var.$black;
     padding: 0 10px;
     transform:rotate(-25deg)
+
   }
 
+}
+
+.p-campaign__inner {
+  margin: 0 10%;
+  
 }
 
 .p-campaign__text {
@@ -70,6 +116,18 @@
 .p-campaign__title {
   font-size: 20px;
   font-weight: 700;
+
+  @include mixin.mq('tab') {
+    font-size: 18px;
+
+  }
+
+  br {
+
+    // @include mixin.mq('tab') {
+    //   display: none;
+    // }
+  }
 
   span {
     font-size: 24px;

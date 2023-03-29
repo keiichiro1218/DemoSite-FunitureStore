@@ -3,6 +3,10 @@
 
 .c-card {
 
+  @include mixin.mq('tab') {
+    width: 34%;
+ 
+  }
 }
 
 .c-card__img-wrapper {
@@ -44,11 +48,33 @@
 
 .c-card__content {
   padding: 16px 0;
-  
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.160784);
+
+  @include mixin.mq('tab') {
+    padding: 24px 0;
+ 
+  }
 }
 
-.c-card__inner {
+.c-card__inner-voice {
   margin: 0 9%;
+
+  @include mixin.mq('tab') {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+ 
+  }
+}
+
+.c-card__inner-ideal {
+  margin: 0 11%;
+
+  // @include mixin.mq('tab') {
+  //   margin: 0 5%;
+  //   display: flex;
+ 
+  // }
 }
 
 .c-card__img {
@@ -68,11 +94,21 @@
 .c-card__title-top03 {
   margin-bottom: 8px;
   text-align: end;
+
+  @include mixin.mq('tab') {
+    text-align: start;
+ 
+  }
 }
 
 .c-card__title-under {
   text-align: end;
   margin-bottom: 17px;
+
+  @include mixin.mq('tab') {
+    text-align: start;
+ 
+  }
  
 }
 
@@ -81,17 +117,31 @@
   font-size: 18px;
   font-weight: 700;
   padding: 5px 15px;
+
+  @include mixin.mq('tab') {
+    font-size: 12px;
  
+  }
 }
 
 .c-card__sentence {
   font-size: 14px;
+
+  @include mixin.mq('tab') {
+    font-size: 12px;
+ 
+  }
 
 }
 
 .c-card__name-wapper {
   text-align: end;
   margin-top: 20px;
+
+  @include mixin.mq('tab') {
+    margin-top: auto;
+ 
+  }
 
 }
 
@@ -130,4 +180,21 @@
 
 .c-card__img-wrapper-scene {
   margin-top: 16px;
+
+
+  // @include mixin.mq('tab') {
+  //   display: none;
+ 
+  // }
+  
+}
+
+.c-card__name-wapper02 {
+  margin-top: 30px;
+
+}
+
+.c-card__img-wrapper-scene-pc {
+  display: none;
+  position: absolute;
 }

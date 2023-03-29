@@ -1,9 +1,7 @@
 @use "./global/variables" as var;
 @use "./global/mixin" as mixin;
 
-.c-iconLogin {
-  
-  @include mixin.mq('tab') {
-		display: none;
-	} 
+.u-fdRowReves {
+  flex-direction: row-reverse;
+
 }

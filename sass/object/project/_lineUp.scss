@@ -3,6 +3,11 @@
 
 .p-lineUp {
   margin-top: 24px;
+
+  @include mixin.mq('tab') {
+    margin: 58px 15% 0 15%;
+ 
+  }
 }
 
 .p-lineUp__title {
@@ -41,6 +46,11 @@
 .p-lineUp__cards {
   margin-top: 16px;
   display: flex;
+
+  @include mixin.mq('tab') {
+    margin-top: 58px;
+ 
+  }
   
 }
 
@@ -50,6 +60,11 @@
   &:nth-child( n + 2 ) {
     margin-left: 6%;
   }
+  
+}
+
+.p-lineUp__card-img {
+  width: 100%;
   
 }
 

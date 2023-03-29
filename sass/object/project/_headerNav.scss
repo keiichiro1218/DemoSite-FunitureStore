@@ -1,0 +1,32 @@
+@use "./global/variables" as var;
+@use "./global/mixin" as mixin;
+
+.p-headerNav {
+  display: none;
+
+  @include mixin.mq('tab') {
+		display: flex;
+	}
+  
+}
+
+.p-headerNav__item {
+  list-style: none;
+
+  @include mixin.mq('tab') {
+    
+		&:not(:last-child) {
+      margin-right: 40px;
+
+    }
+	}
+
+}
+
+.p-headerNav__text {
+  text-decoration: none;
+  color: var.$black;
+  font-size: 14px;
+  font-weight: 700;
+  
+}

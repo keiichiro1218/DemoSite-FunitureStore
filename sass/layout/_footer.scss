@@ -1,2 +1,13 @@
 @use "./global/variables" as var;
 @use "./global/mixin" as mixin;
+
+.l-footer {
+  background-color: var.$black;
+  
+}
+
+.l-footer__inner {
+  margin: 0 3%;
+  padding: 28px 0 16px;
+
+}

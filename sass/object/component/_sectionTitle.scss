@@ -7,6 +7,13 @@
   font-weight: 500;
   color: var.$black;
 
+  br {
+    @include mixin.mq('tab') {
+      display: none;
+   
+    }
+  }
+
   &::after {
     content: "";
     width: 80px;

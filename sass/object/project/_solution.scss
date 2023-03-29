@@ -2,13 +2,19 @@
 @use "./global/mixin" as mixin;
 
 .p-solution {
-  background-image: url(../assets/img_solution-background.png);
+  background-image: url(../assets/img_background-solution.png);
   
 }
 
 .p-solution__inner {
   margin: 0 3%;
   padding: 32px 0 86px 0;
+
+  @include mixin.mq('tab') {
+    padding: 80px 0 90px 0;
+    margin: 0 10%;
+ 
+  }
 }
 
 .p-solution__title {
@@ -16,14 +22,44 @@
 }
 
 .p-solution__problems {
- margin-top: 28px;
+  margin-top: 28px;
 
+  @include mixin.mq('tab') {
+    font-size: 58px;
+ 
+  }
 }
 
 .p-solution__problem {
   
   &:not(:last-child) {
     margin-bottom: 20px;
+  }
+}
+
+.p-solution__problem-flex {
+  
+  @include mixin.mq('tab') {
+    display: flex;
+ 
+  }
+}
+
+.p-solution__problem-left {
+  
+  @include mixin.mq('tab') {
+    width: 46%;
+ 
+  }
+}
+
+.p-solution__problem-right {
+  margin-left: auto;
+  margin-bottom: 20px;
+
+  @include mixin.mq('tab') {
+    width: 46%;
+ 
   }
 }
 
@@ -41,5 +77,12 @@
   color: var.$white;
   font-weight: 700;
   font-size: 16px;
+
+  br {
+    @include mixin.mq('tab') {
+      display: none;
+   
+    }
+  }
 
 }
