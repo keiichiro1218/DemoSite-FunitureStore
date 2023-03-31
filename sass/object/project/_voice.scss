@@ -19,6 +19,11 @@
 .p-voice__inner {
   margin: 0 3%;
 
+  @include mixin.mq('pc') {
+    margin: 0 11%;
+ 
+  }
+
 }
 
 .p-voice__user-title {

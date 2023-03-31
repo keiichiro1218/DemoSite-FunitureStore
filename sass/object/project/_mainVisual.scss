@@ -19,6 +19,12 @@
   position: absolute;
   top: 50%;
   transform: translateY(-80%);
+
+  @include mixin.mq('pc') {
+    transform: translateY(-70%);
+    left: 10%;
+ 
+  }
   
 }
 
@@ -42,7 +48,14 @@
 
   @include mixin.mq('tab') {
 		font-size: 30px;
+
 	}
+
+  @include mixin.mq('pc') {
+    font-size: 40px;
+    padding: 12px;
+ 
+  }
 }
 
 .p-mainVisual__sentenceSub {
@@ -58,4 +71,9 @@
 		font-size: 20px;
 
 	}
+
+  @include mixin.mq('tab') {
+    font-size: 24px;
+ 
+  }
 }

@@ -6,6 +6,10 @@
   background-color: var.$gray;
   padding: 32px 0;
 
+  @include mixin.mq('pc') {
+    padding: 50px 0;
+ 
+  }
 }
 
 .p-campaign__catchphraseLeft {
@@ -30,12 +34,25 @@
 
   }
 
+  @include mixin.mq('pc') {
+    bottom: 9%;
+ 
+  }
+
   br {
     display: none;
 
     @include mixin.mq('tab') {
       display: block;
       text-align: center;
+    }
+  }
+
+  span {
+
+    @include mixin.mq('tab') {
+      font-size: 72px;
+   
     }
   }
   
@@ -63,6 +80,11 @@
 
     }
 
+    @include mixin.mq('pc') {
+      bottom: 9%;
+   
+    }
+
   br {
     display: none;
 
@@ -71,7 +93,14 @@
       text-align: center;
     }
   }
-  
+
+  span {
+
+    @include mixin.mq('tab') {
+      font-size: 72px;
+   
+    }
+  }
 }
 
 .p-campaign__content {
@@ -84,6 +113,7 @@
 
   @include mixin.mq('tab') {
 		width: 50%;
+    padding: 50px 0 40px 0;
 
 
 	}
@@ -101,16 +131,29 @@
 
   }
 
+  @include mixin.mq('pc') {
+
+    &::before {
+      display: none;
+
+    }
+  }
 }
 
 .p-campaign__inner {
   margin: 0 10%;
+
+  
   
 }
 
 .p-campaign__text {
   margin-bottom: 21px;
-  
+
+  @include mixin.mq('pc') {
+    margin-bottom: 30px;
+ 
+  }
 }
 
 .p-campaign__title {
@@ -122,21 +165,49 @@
 
   }
 
-  br {
-
-    // @include mixin.mq('tab') {
-    //   display: none;
-    // }
+  @include mixin.mq('pc') {
+    font-size: 30px;
+    
   }
 
-  span {
-    font-size: 24px;
+  br {
+    @include mixin.mq('tab') {
+      display: none;
+   
+    }
+  }
+}
 
+.p-campaign__label {
+  @include mixin.mq('pc') {
+      position: relative;
+      font-size: 30px;
+   
+      &::before {
+        content: "今だけ！";
+        position: absolute;
+        top: -4px;
+        left: -93px;
+        color: var.$white;
+        font-weight: 700;
+        background-color: var.$black;
+        padding: 0 10px;
+        transform:rotate(-25deg);
+        font-size: 16px;
+    
+      }
+
+    // }  
   }
 }
 
 .p-campaign__under {
   margin: 0 13%;
+
+  @include mixin.mq('pc') {
+    margin: 0;
+ 
+  }
 
 }
 
@@ -145,9 +216,22 @@
   flex-wrap: wrap;
   justify-content: center;
 
+  @include mixin.mq('pc') {
+    flex-wrap: nowrap;
+ 
+  }
+
 }
 
 .p-campaign__monthly {
+
+  br {
+    
+    @include mixin.mq('pc') {
+      display: none;
+   
+    }
+  }
 
 }
 
@@ -155,19 +239,59 @@
   order: 1;
   margin-top: 12px;
 
+  @include mixin.mq('pc') {
+    margin-top: 0px;
+    margin-left: 14px;
+
+  }
 }
 
 .p-campaign__discount {
   margin-left: 14px;
 
+  br {
+    
+    @include mixin.mq('pc') {
+      display: none;
+   
+    }
+  }
+}
+
+.p-campaign__button-area {
+
+  @include mixin.mq('pc') {
+    margin-top: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+  }
 }
 
 .p-campaign__3step {
   margin-top: 32px;
 
+  @include mixin.mq('pc') {
+    margin-top: 0;
+ 
+  }
 }
 
 .p-campaign__button {
   margin-top: 23px;
 
+  @include mixin.mq('pc') {
+    margin-left: 36px;
+    margin-top: 0;
+ 
+  }
+}
+
+.p-campaign__10 {
+
+  @include mixin.mq('pc') {
+    font-size: 56px;
+ 
+  }
 }

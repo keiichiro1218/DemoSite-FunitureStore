@@ -3,17 +3,38 @@
 
 .p-faq {
   padding: 32px 0;
+
+  @include mixin.mq('pc') {
+    padding: 80px 0;
+ 
+  }
 }
 
 .p-faq__inner {
   margin: 0 3%;
 
+  @include mixin.mq('pc') {
+    margin: 0 9%;
+ 
+  }
+
 }
 .p-faq__title {
   text-align: center;
+
+  @include mixin.mq('pc') {
+    margin-bottom: 58px;
+ 
+  }
 }
 
 .p-faq__questions {
+
+  @include mixin.mq('pc') {
+    display: flex;
+    flex-wrap: wrap;
+ 
+  }
   
 }
 
@@ -49,6 +70,13 @@
     background-color: var.$black;
   }
 
+  @include mixin.mq('pc') {
+    width: 49%;
+
+    &:nth-child( 2n + 1 ) {
+      margin-right: 2%;
+    } 
+  }
 }
 
 .p-faq__question-q {
@@ -71,4 +99,9 @@
 .p-faq__button {
   text-align: center;
   margin-top: 28px;
+
+  @include mixin.mq('pc') {
+    margin-top: 58px;
+ 
+  }
 }
