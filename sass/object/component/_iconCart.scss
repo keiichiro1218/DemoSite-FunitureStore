@@ -2,6 +2,13 @@
 @use "./global/mixin" as mixin;
 
 .c-iconCart {
-  font-size: 27px;
+  font-size: 18px;
+  margin-left: 30%;
+  display: inline-block;
   color: var.$black;
+
+  @include mixin.mq('pc') {
+    font-size: 27px;
+ 
+  }
 }

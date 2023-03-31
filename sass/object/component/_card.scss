@@ -249,8 +249,13 @@
 }
 
 .c-card__img-scene01-pc {
-  width: 27%;
+  display: none;
 
+  @include mixin.mq('pc') {
+    width: 27%;
+ 
+  }
+  
   img {
     @include mixin.mq('pc') {
       width: 100%;

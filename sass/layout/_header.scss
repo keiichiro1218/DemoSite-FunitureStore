@@ -75,6 +75,8 @@
 .l-header__icon {
     display: flex;
     position: absolute;
+    width: 10%;
+    right: 5%;
 
     @include mixin.mq('tab') {
         position: static;

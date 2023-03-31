@@ -408,6 +408,7 @@ video {
 .l-header__icon {
   display: flex;
   position: absolute;
+  right: 5%;
 }
 @media screen and (min-width: 768px) {
   .l-header__icon {
@@ -680,7 +681,12 @@ video {
 }
 
 .c-card__img-scene01-pc {
-  width: 27%;
+  display: none;
+}
+@media screen and (min-width: 1110px) {
+  .c-card__img-scene01-pc {
+    width: 27%;
+  }
 }
 @media screen and (min-width: 1110px) {
   .c-card__img-scene01-pc img {
@@ -705,10 +711,20 @@ video {
 }
 
 .c-iconCart {
-  font-size: 27px;
+  font-size: 18px;
+  margin-left: 60%;
+  display: inline-block;
   color: #565956;
 }
+@media screen and (min-width: 1110px) {
+  .c-iconCart {
+    font-size: 27px;
+  }
+}
 
+.c-iconLogin {
+  display: inline-block;
+}
 @media screen and (min-width: 768px) {
   .c-iconLogin {
     display: none;

@@ -2,6 +2,7 @@
 @use "./global/mixin" as mixin;
 
 .c-iconLogin {
+  color: var.$black;
   
   @include mixin.mq('tab') {
 		display: none;
