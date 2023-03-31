@@ -252,6 +252,7 @@
   display: none;
 
   @include mixin.mq('pc') {
+    
     width: 27%;
     display: block;
  
