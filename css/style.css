@@ -408,6 +408,7 @@ video {
 .l-header__icon {
   display: flex;
   position: absolute;
+  width: 10%;
   right: 5%;
 }
 @media screen and (min-width: 768px) {
@@ -686,6 +687,7 @@ video {
 @media screen and (min-width: 1110px) {
   .c-card__img-scene01-pc {
     width: 27%;
+    display: block;
   }
 }
 @media screen and (min-width: 1110px) {
@@ -712,7 +714,7 @@ video {
 
 .c-iconCart {
   font-size: 18px;
-  margin-left: 60%;
+  margin-left: 30%;
   display: inline-block;
   color: #565956;
 }
@@ -723,7 +725,7 @@ video {
 }
 
 .c-iconLogin {
-  display: inline-block;
+  color: #565956;
 }
 @media screen and (min-width: 768px) {
   .c-iconLogin {
