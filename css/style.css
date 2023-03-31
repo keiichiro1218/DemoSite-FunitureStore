@@ -1741,13 +1741,23 @@ video {
   height: 104px;
   padding: 8px;
   background-color: #F2F4F1;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1607843137);
+  box-shadow: 0px 4px 4px 0px #565956;
   border-radius: 8px;
+}
+@media screen and (min-width: 1110px) {
+  .p-lineUp__item-wrapper {
+    padding: 22px 0 22px 35px;
+  }
 }
 
 .p-lineUp__item {
   font-size: 14px;
   font-weight: 700;
+}
+@media screen and (min-width: 1110px) {
+  .p-lineUp__item br {
+    display: none;
+  }
 }
 
 .p-lineUp__color {
